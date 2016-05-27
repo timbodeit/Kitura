@@ -322,8 +322,8 @@ private class Cookies {
                     let theCookie = NSHTTPCookie(properties:
                         [NSHTTPCookieDomain: ".",
                          NSHTTPCookiePath: "/",
-                         NSHTTPCookieName: cookieNameValueParts[0] ,
-                         NSHTTPCookieValue: cookieNameValueParts[1]])
+                         NSHTTPCookieName: cookieNameValueParts[0] as NSString,
+                      NSHTTPCookieValue: cookieNameValueParts[1] as NSString])
                     cookies[cookieNameValueParts[0]] = theCookie
                 }
             }
